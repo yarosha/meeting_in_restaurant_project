@@ -16,7 +16,7 @@ def meeting():
 
 
 def run_bot(time_str):
-    vk = vk_api.VkApi(token='cb6145a957442835528d14699d5601685ccd389d585ab3f55786b6ec56d0600436670449ef71f0fc70f59')
+    vk = vk_api.VkApi(token='')
     vk._auth_token()
     schedule.every().day.at(time_str).do(meeting)
     while True:
